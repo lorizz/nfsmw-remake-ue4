@@ -2,7 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "GameFramework/FloatingPawnMovement.h"
+#include "GameFramework/MovementComponent.h"
 #include "VehicleHandling.generated.h"
 
 
@@ -26,7 +26,7 @@ public:
 
 private:
 	UStaticMeshComponent* VehicleMesh;
-	UFloatingPawnMovement* VehicleMovement;
+	UMovementComponent* VehicleMovement;
 
 public:
 	UPROPERTY(EditAnywhere, Category = "Chassis")

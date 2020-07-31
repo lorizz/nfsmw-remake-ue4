@@ -46,7 +46,7 @@ APlayerControllerPawn::APlayerControllerPawn()
 void APlayerControllerPawn::BeginPlay()
 {
 	Super::BeginPlay();
-	AddActorLocalOffset(VehicleMesh->GetRelativeLocation());
+	VehicleMovement->SetUpdatedComponent(VehicleMesh);
 }
 
 void APlayerControllerPawn::Tick(float DeltaTime)
